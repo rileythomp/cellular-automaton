@@ -3,7 +3,7 @@
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width,initial-scale=1'>
-        <title>Langton's Ant</title>
+        <title>Cellular Automaton</title>
         <link rel='shortcut icon' href='' type='image/png'>
         <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Poppins|Rubik|Lato|Raleway|Montserrat' type='text/css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,83 +11,13 @@
         <script src='js/less.min.js' ></script>
     </head>
     <body>
-        <div id='simulation-settings'>
-            <span>Milliseconds per interval: </span>
-            <select id='interval-time'>
-                <option value='1'>1</option>
-                <option selected value='10'>10</option>
-                <option value='100'>100</option>
-                <option value='1000'>1000</option>
-            </select>
-            <span>Steps per interval: </span>
-            <select id='iterations-per-interval'>
-                <option value='1'>1</option>
-                <option value='10'>10</option>
-                <option selected value='100'>100</option>
-                <option value='1000'>1000</option>
-                <option value='10000'>10000</option>
-            </select>
-            <span>Grid Borders: </span>
-            <label class='switch'>
-                <input type='checkbox' onclick='toggle_border()'>
-                <span class='slider round'></span>
-            </label>
-        </div>
-
-
-        <div>
-            <table id='board'>
-
-            </table>
-            <div id='ant-settings'>
-                <table id='ant-table'>
-                    <tr id='top-row'>
-                        <td></td>
-                        <td>Pattern</td>
-                        <td>Row</td>
-                        <td>Column</td>
-                        <td>Initial Direction</td>
-                        <td></td>
-                    </tr>
-                    <tr class='ant'>
-                        <td>1.</td>
-                        <td>
-                            <input type='text' value='LR'>
-                        </td>
-                        <td>
-                            <input type='number' max='119' min='0' value='60'>
-                        </td>
-                        <td>
-                            <input type='number' max='119' min='0' value='60'>
-                        </td>
-                        <td>
-                            <select>
-                                <option value='0'>North</option>
-                                <option value='1'>East</option>
-                                <option value='2'>South</option>
-                                <option value='3'>West</option>
-                            </select>
-                        </td>
-                        <td><i class='fa fa-times'></i></td>
-                    </tr>
-                </table>
-                <i id='add-ant' class='fa fa-plus'></i>
-                <p>Pattern Suggestions</p>
-                <ul>
-                    <li>LR (Langton's Ant, highways)</li>
-                    <li>LRRL (Symmetrical shape)</li>
-                    <li>LLLLRRRR (Cardioid)</li>
-                    <li>LRRRRRLLR (Highways in square)</li>
-                    <li>RRLLLRLLLRRR (Moving triangle)</li>
-                </ul>
-            </div>
-        </div>
-        <p>Steps: <span id='iterations'></span></p>
-        <button id='toggle-ant'>Start</button>
-        <button id='reset'>Reset</button>
-
+        <h1 style="margin-top: 0">Cellular Automaton</h2>
+        <a style="font-size: 2em;" href="/ants.html">Ants</a>
+        <br>
+        <br>
+        <a style="font-size: 2em;"href="/turmites.html">Turmites</a>
+        <br>
+        <br>
+        <a style="font-size: 2em;"href="/gameoflife.html">Conway's Game of Life</a>
     </body>
-    <script src='js/turmite.js'></script>
-    <script src='js/ant.js'></script>
-    <script src='js/main.js'></script>
 </html>

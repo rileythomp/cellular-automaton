@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
+        <title>Cellular Automaton</title>
+        <link rel='shortcut icon' href='' type='image/png'>
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Poppins|Rubik|Lato|Raleway|Montserrat' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet/less' type='text/css' href='styles/styles.less' />
+        <script src='js/less.min.js' ></script>
+    </head>
+    <body>
+        <div id='simulation-settings'>
+            <span>Milliseconds per interval: </span>
+            <select id='interval-time'>
+                <option value='1'>1</option>
+                <option selected value='10'>10</option>
+                <option value='100'>100</option>
+                <option value='1000'>1000</option>
+            </select>
+            <span>Steps per interval: </span>
+            <select id='iterations-per-interval'>
+                <option value='1'>1</option>
+                <option selected value='10'>10</option>
+                <option value='100'>100</option>
+                <option value='1000'>1000</option>
+                <option value='10000'>10000</option>
+            </select>
+            <span>Grid Borders: </span>
+            <label class='switch'>
+                <input type='checkbox' onclick='toggle_border()'>
+                <span class='slider round'></span>
+            </label>
+        </div>
+
+
+        <div>
+            <table id='board'>
+
+            </table>
+            <div id='ant-settings'>
+                Choose Turmite Configuration
+                <br>
+                <select id="turmite-config">
+                    <option value="0">Traveller</option>
+                    <option value="4">Fibonacci Spiral</option>
+                    <option value="6">X-Cross Maze</option>
+                    <option value="3">Diagonal Maze</option>
+                    <option value="5">T-Cross</option>
+                    <option value="1">Vertical Mandala</option>
+                    <option value="2">Highways</option>
+                    <option value="7">Random</option>
+                </select>
+                <br>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="blank">Explanation <i class="fa fa-external-link-square"></i></a>
+            </div>
+        </div>
+        <p>Steps: <span id='iterations'>0</span></p>
+        <button id='toggle-ant'>Start</button>
+        <button id='reset'>Reset</button>
+        <br>
+        <br>
+        <button><a href="../">Back</a></button>
+
+    </body>
+    <script src='js/main.js'></script>
+    <script src='js/transitions.js'></script>
+    <script src='js/turmite.js'></script>
+</html>
