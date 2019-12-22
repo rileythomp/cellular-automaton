@@ -3,7 +3,7 @@
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width,initial-scale=1'>
-        <title>Cellular Automaton</title>
+        <title>Conway's Game of Life</title>
         <link rel='shortcut icon' href='' type='image/png'>
         <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Poppins|Rubik|Lato|Raleway|Montserrat' type='text/css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,6 +34,19 @@
             </table>
             <div id='ant-settings'>
                 <p>Click on cells to initialize the grid, then press start.</p>
+                <br>
+                <select id="initializations">
+                    <option selected disabled>Interesting initializations</option>
+                    <option value="0">R-pentomino</option>
+                    <option value="1">Diehard</option>
+                    <option value="2">Acorn</option>
+                    <option value="3">Glider</option>
+                    <option value="4">Light-weight spaceship</option>
+                    <option value="5">Middle-weight spaceship</option>
+                    <option value="6">Heavy-weight spaceship</option>
+                </select>
+                <br>
+                <br>
                 <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="blank">Explanation <i class="fa fa-external-link-square"></i></a>
             </div>
         </div>
@@ -44,7 +57,9 @@
         <br>
         <br>
         <button><a href="../">Back</a></button>
-
+        <a id='github' target='blank' href='https://github.com/rileythomp/cellular-automaton'>
+            <i class='fa fa-github'></i>
+        </a>
     </body>
     <script src='js/cellmodel.js'></script>
     <script src='js/gameoflife.js'></script>
