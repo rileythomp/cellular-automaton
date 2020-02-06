@@ -2,9 +2,9 @@
 
 https://cellularautomaton.herokuapp.com
 
-![cellularautomaton](cellularautomaton.png)
-
 A site to explore a variety of different cellular automaton.
+
+![cellularautomaton](cellularautomaton.png)
 
 To run locally:
 
