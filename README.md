@@ -2,7 +2,7 @@
 
 https://cellularautomaton.herokuapp.com
 
-A site to explore a variety of different cellular automaton.
+A site to explore a variety of different cellular automaton. These include Conway's Game of Life, Ants (such as Langton's Ant) and Turmites. Users can enter custom or preset configurations and watch the simulations play out.
 
 ![cellularautomaton](cellularautomaton.png)
 
